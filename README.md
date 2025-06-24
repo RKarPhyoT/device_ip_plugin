@@ -1,15 +1,41 @@
-# device_ip_plugin
+# Device IP Plugin
 
-A new Flutter plugin project.
+A Flutter plugin to retrieve device IP addresses.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/to/develop-plugins),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+- ✅ IPv4 and IPv6 support
+- ✅ WiFi and Mobile network filtering
+- ✅ Intelligent caching
+- ✅ Offline handling
+- ✅ Cross-platform (Android & iOS)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Installation
 
+Add this to your `pubspec.yaml`:
+
+\`\`\`yaml
+dependencies:
+  device_ip_plugin:
+    git:
+      url: https://github.com/RKarPhyoT/device_ip_plugin.git
+\`\`\`
+
+## Usage
+
+\`\`\`dart
+import 'package:device_ip_plugin/device_ip_plugin.dart';
+
+// Get IP address
+final ipv4 = await DeviceIpPlugin.getIpv4Address();
+print('IPv4: $ipv4');
+\`\`\`
+
+## Platform Support
+
+| Platform | Support |
+|----------|---------|
+| Android  | ✅      |
+| iOS      | ✅      |
+| Web      | ❌      |
+| Desktop  | ❌      |
